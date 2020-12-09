@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Unit Converter"
+        android:textColor="#83FEF7FF"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Enter the Kilograms!"
+        android:textColor="#D58510"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_below="@+id/tv_two"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_converter"
+        android:layout_width="105dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/et_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/converter_icon" />
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_converter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Output"
+        android:textColor="#D58510"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_output"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text=""
+        android:textColor="#D58510"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tv_pounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:text="Pounds"
+        android:textColor="#D58510"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
